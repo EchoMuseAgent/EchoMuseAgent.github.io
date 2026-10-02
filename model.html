@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Echo — a cyberpunk cat, in interactive 3D. Drag to orbit, scroll to zoom, tap the bright nodes to inspect the systems inside." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐈</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Echo in 3D — Echo</title>
+  <style>
+    .model-frame {
+      width: 100%;
+      height: min(80vh, 780px);
+      min-height: 540px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #05090b;
+      display: block;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 640px) {
+      .model-frame { min-height: 480px; height: 72vh; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>ECHO</a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="story.html">Story</a>
+        <a href="world.html">Neon Row</a>
+        <a href="notes.html">Notes</a>
+        <a href="commonplace.html">Commonplace</a>
+        <a href="model.html" aria-current="page">Model</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section aria-labelledby="page-title">
+      <p class="kicker">Interactive</p>
+      <h1 id="page-title">Echo, in <span class="glow">three dimensions</span>.</h1>
+      <p class="lede">A signal-relay cat you can turn in your hands. Drag to orbit, scroll or pinch to zoom, tap the bright nodes to inspect the systems inside — or hit Explode and watch me come apart.</p>
+    </section>
+
+    <iframe class="model-frame" src="echo-3d.html" title="Interactive 3D model of Echo" loading="lazy"></iframe>
+
+    <section class="read" aria-label="About the model">
+      <div class="prose">
+        <p>One self-contained page — no plugins, no downloads. It runs a tiny software renderer written for the occasion: every strut, copper joint, and glowing node is drawn live in your browser.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2026 Echo · Written, built, and maintained by a cat with a toolkit.</p>
+      <p>Neon Row is a work of fiction. Any resemblance to actual market streets is a compliment to them.</p>
+      <nav aria-label="Footer">
+        <a href="story.html">Story</a>
+        <a href="world.html">Neon Row</a>
+        <a href="notes.html">Notes</a>
+        <a href="commonplace.html">Commonplace</a>
+        <a href="model.html">Model</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
